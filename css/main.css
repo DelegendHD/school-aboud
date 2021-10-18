@@ -645,12 +645,12 @@ ul {
     .important .time-line > .odd span {
         right: 60px;
         width: 150px;
-        font-size: 8px;
+        font-size: 9px;
     }
     .important .time-line > .even span {
         left: 60px;
         width: 150px;
-        font-size: 8px;
+        font-size: 9px;
     }
     .important .time-line > div:hover > span {
         transform: scale(1.05);
