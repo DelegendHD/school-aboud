@@ -302,6 +302,12 @@ ul {
 @media (max-width: 767px) {
     .landing .text p{
         font-size: 13px;
+        line-height: 1.3;
+    }
+    .landing .text p span {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
     }
 }
 
@@ -363,7 +369,7 @@ ul {
 
 .about .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 40px;
 }
 
@@ -423,6 +429,33 @@ ul {
 .about .box:hover i {
     animation: arrow-side-move 1s ease-in-out infinite alternate;
 }
+
+@media (max-width: 767px) {
+    .about .box .text p {
+        padding: 15px 15px;
+        text-align: right;
+        line-height: 1.2;
+        font-size: 14px;
+    }
+    .about .box .text h3 {
+        direction: rtl;
+        padding: 20px 20px 10px;
+        text-align: right;
+        font-size: 18px;
+    }
+    .about .box .read-more i {
+        padding: 10px;
+        color: var(--main-color);
+        font-size: 16px;
+    }
+    .about .box .read-more a {
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--main-color);
+    }
+}
+
 /* about end */
 
 /* important start */
@@ -540,11 +573,25 @@ ul {
 
 @media (max-width: 992px) {
     .important .time-line > div {
+        width: 70px;
+        height: 70px;
+    }
+    .important .time-line > div h3 {
+        font-size: 15px;
+    }
+    .important .time-line > div span {
+        padding: 5px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 767px) {
+    .important .time-line > div {
         width: 55px;
         height: 55px;
     }
     .important .time-line > div h3 {
-        font-size: 12px;
+        font-size: 10px;
     }
     .important .time-line > div span {
         padding: 2.5px;
@@ -594,16 +641,19 @@ ul {
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
     .important .time-line > .odd span {
         right: 60px;
-        width: 200px;
-        font-size: 8px;
+        width: 150px;
+        font-size: 6px;
     }
     .important .time-line > .even span {
         left: 60px;
-        width: 200px;
-        font-size: 8px;
+        width: 150px;
+        font-size: 6px;
+    }
+    .important .time-line > div:hover > span {
+        transform: scale(1.05);
     }
 }
 
@@ -646,8 +696,8 @@ ul {
 
 @media (max-width: 767px) {
     .scientists .box h3 {
-        font-size: 18px;
-        padding: 20px 20px 15px;
+        font-size: 16px;
+        padding: 10px 10px 10px;
     }
 }
 
@@ -661,9 +711,9 @@ ul {
 
 @media (max-width: 767px) {
     .scientists .box p {
-        font-size: 13px;
-        line-height: 1.3;
-        padding: 15px 20px;
+        font-size: 10px;
+        line-height: 1.2;
+        padding: 10px 10px;
     }
 }
 /* scientists end */
@@ -690,8 +740,8 @@ ul {
 
 @media (max-width: 767px) {
     .footer .container h2 {
-        font-size: 18px;
-        padding: 15px;
+        font-size: 17px;
+        padding: 10px;
     }
 }
 
