@@ -287,7 +287,8 @@ ul {
 
 @media (max-width: 767px) {
     .landing .text h2{
-        font-size: 20px;
+        font-size: 23px;
+        font-weight: bold;
     }
 }
 
@@ -307,7 +308,7 @@ ul {
     .landing .text p span {
         color: black;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
