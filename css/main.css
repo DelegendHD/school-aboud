@@ -535,6 +535,12 @@ ul {
     .important .time-line {
         background-color: var(--main-color-alt);
     }
+    .important .time-line::before {
+        background-color: var(--main-color-alt);
+    }
+    .important .time-line::after {
+        background-color: var(--main-color-alt);
+    }
 }
 
 .important .time-line::before {
