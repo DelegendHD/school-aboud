@@ -17,6 +17,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body {
@@ -188,6 +189,7 @@ ul {
     .header .logo {
         width: 100%;
         height: 40px;
+        color: var(--main-color-alt);
     }
 }
 
@@ -359,6 +361,12 @@ ul {
     color: var(--main-color-alt);
 }
 
+@media (max-width: 992px) {
+    .landing .arrow i {
+        color: var(--main-color-alt);
+    }
+}
+
 /* landing end */
 
 /* about start */
@@ -446,14 +454,14 @@ ul {
     }
     .about .box .read-more i {
         padding: 10px;
-        color: var(--main-color);
+        color: var(--main-color-alt);
         font-size: 16px;
     }
     .about .box .read-more a {
         padding: 10px;
         font-size: 16px;
         font-weight: bold;
-        color: var(--main-color);
+        color: var(--main-color-alt);
     }
 }
 
@@ -521,6 +529,12 @@ ul {
     align-items: center;
     position: relative;
     z-index: 2;
+}
+
+@media (max-width: 776px) {
+    .important .time-line {
+        background-color: var(--main-color-alt);
+    }
 }
 
 .important .time-line::before {
@@ -693,10 +707,7 @@ ul {
 .scientists .box {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
+
     transition: var(--main-transition);
 }
 
@@ -717,6 +728,9 @@ ul {
         font-size: 16px;
         padding: 10px 10px 10px;
     }
+    .scientists .box {
+        margin-right: 2px;
+    }
 }
 
 .scientists .box p {
@@ -731,7 +745,7 @@ ul {
     .scientists .box p {
         font-size: 10px;
         line-height: 1.2;
-        padding: 10px 10px;
+        padding: 5px 10px;
     }
 }
 /* scientists end */
@@ -760,6 +774,9 @@ ul {
     .footer .container h2 {
         font-size: 17px;
         padding: 10px;
+    }
+    .footer {
+        background-color: var(--main-color-alt);
     }
 }
 
