@@ -21,6 +21,7 @@ html {
 
 body {
     font-family: "Cairo", sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -441,6 +442,13 @@ ul {
     transform: rotate(120deg);
 }
 
+@media (max-width: 767px) {
+    .important .svg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 .important svg:nth-child(2) {
     bottom: 2000px;
     transform: rotate(160deg);
@@ -532,15 +540,15 @@ ul {
 
 @media (max-width: 992px) {
     .important .time-line > div {
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
     }
     .important .time-line > div h3 {
-        font-size: 15px;
+        font-size: 13px;
     }
     .important .time-line > div span {
-        padding: 5px;
-        line-height: 1.2;
+        padding: 2.5px;
+        line-height: 1.05;
     }
 }
 
@@ -588,14 +596,14 @@ ul {
 
 @media (max-width: 992px) {
     .important .time-line > .odd span {
-        right: 80px;
-        width: 250px;
-        font-size: 12px;
+        right: 70px;
+        width: 230px;
+        font-size: 10px;
     }
     .important .time-line > .even span {
-        left: 80px;
-        width: 250px;
-        font-size: 12px;
+        left: 70px;
+        width: 230px;
+        font-size: 10px;
     }
 }
 
@@ -610,7 +618,7 @@ ul {
 
 .scientists .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 40px;
 }
 
