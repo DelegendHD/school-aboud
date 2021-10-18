@@ -707,7 +707,9 @@ ul {
 .scientists .box {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     transition: var(--main-transition);
 }
 
@@ -729,7 +731,7 @@ ul {
         padding: 10px 10px 10px;
     }
     .scientists .box {
-        margin-right: 2px;
+        margin-right: 10px;
     }
 }
 
