@@ -574,8 +574,8 @@ ul {
 
 @media (max-width: 992px) {
     .important .time-line > div {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
     .important .time-line > div h3 {
         font-size: 15px;
@@ -599,6 +599,7 @@ ul {
         line-height: 1.05;
     }
 }
+
 
 .important .time-line > div h3 {
     direction: rtl;
@@ -640,6 +641,22 @@ ul {
     width: 400px;
     border-right: 5px solid var(--main-color-alt);
 
+}
+
+@media (max-width: 992px) {
+    .important .time-line > .odd span {
+        right: 100px;
+        width: 250px;
+        font-size: 12px;
+    }
+    .important .time-line > .even span {
+        left: 100px;
+        width: 250px;
+        font-size: 12px;
+    }
+    .important .time-line > div:hover > span {
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 767px) {
